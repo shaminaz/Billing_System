@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			var i=1;
+
+			function slide()
+			{
+				if(i<3)
+				{
+					i++;
+				}
+				else
+				{
+					i=1;
+				}
+				document.getElementById("m").src="a"+i+".jpg";
+			
+				setTimeout("slide()",3000)
+			}
+		</script>
+		<style>
+			.floatimg{
+					float:right;
+				}
+			.par{
+				font-size:25px;
+				word-spacing:9px;
+			}
+			.active
+				{
+					background-color: #00bfff;
+				}
+			ul{
+				list-style-type: none;
+				margin:0;
+				padding:0;
+				overflow:hidden;
+				background-color: #333;
+			}
+			li
+			{
+				float:left;
+			}
+			li a{
+				display:block;
+				color:white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration:none;
+				}
+			li a:hover{
+					background-color: #111;
+				}
+
+		</style>
+	</head>
+	<body onload="slide()"  background="bg.jpg" style=" background-repeat:no-repeat; background-size:cover; ">
+		<div align="center"><h1 style="font-size:300%"><i>Vikas Corporation</i></h1></div>
+		
+
+		<ul>
+			<li><a href="form2.php">Add</a></li>
+			<li><a href="form3.php">view</a></li>
+			<li><a class="active" href="index.html">Home</a></li>
+			<li><a href="logout.php">logout</a></li>
+		</ul>
+		
+
+
+		
+		<p ><img src="a1.jpg" width="38%" height="40%" id="m" class="floatimg"><div style=" text-align: justify; text-align-last:left;"><p class="par">Vikas Corporation  garage and services which provides car repair and maintenance. It is situated in Shop No. #8, Oppo.Kings High School,Near global village,Mysore Road, RV Vidyaniketan, Mailasandra,Bengaluru ,karnataka 560060. Founder of Vikas Corporation is basically an Automobile Engineer who initially started woring for Maruthi Company,later on to make his own identity he started with Vikas Motors which is in Mysore Road. Vikas Motors is the main branch under which many sub-branches are there one among them is Vikas Corporation. It is one among the reputed garrage where while recruiting employee they will look for an IT degree holders,even to become an helper they look for someone with 10th standard certificate. here monthly approximately 250-300 cars will come to get repair and service and their monthly income is about 12 to 15 lakhs. In those revenue he should maintain current bills, labour maintainance etc.</p>  </div></img></p>
+		
+	</body>
+</html>
